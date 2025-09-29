@@ -1,0 +1,48 @@
+    ---
+    // src/components/Header.astro
+
+    import { Image } from 'astro:assets';
+    import logoImage from '../../assets/images/elements/SVG/LOGO-COREFIBRA-CABECALHO.svg';
+    import iconeSeta from '../../assets/images/elements/SVG/SETA-VERDE.svg';
+    import './Header.css'; 
+
+    const links = [
+    { href: "#home", label: "Home" },
+    { href: "#servicos", label: "Serviços" },
+    { href: "#sobre", label: "Sobre" },
+    { href: "#contato", label: "Contato" },
+    ];
+    ---
+
+    <header class="header">
+            <a href="/" class="logo-link">
+                <Image
+                    src={logoImage}
+                    alt="Logo Core Fibra"
+                    width={200}
+                    height={20}
+                    class="logo-image"
+                />
+            </a>
+
+            <div aria-hidden="true"></div> 
+
+            <nav class="nav">
+                {links.map(link => (
+                    <a href={link.href} class="nav-link">{link.label}</a>
+                ))}
+            </nav>
+
+            <div aria-hidden="true"></div> 
+            
+            <button class="cta-button custom-font">
+                FALE COM UM ESPECIALISTA
+                <Image 
+                    src={iconeSeta} 
+                    alt="Ícone de seta" 
+                    width={20}
+                    height={20}
+                    class="cta-icon" 
+                />
+            </button>
+    </header>

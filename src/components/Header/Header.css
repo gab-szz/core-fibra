@@ -1,0 +1,105 @@
+.custom-font {
+  font-family: "Big Shoulders", sans-serif;
+}
+/* Base do Header */
+.header {
+  height: 80px;
+  background-color: #b4e01e;
+  border-bottom: 1px solid #e5e7eb;
+  color: #2e2c31;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Logo */
+.logo-image {
+  height: 2rem; /* ~20px */
+  width: auto;
+  display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+/* Navegação e Links */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Espaço entre os links */
+}
+
+.nav-link {
+  font-size: 1.125rem; /* ~18px */
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit; /* Herda a cor do .header */
+  padding: 0.2rem;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Botão de Ação (CTA) */
+.cta-button {
+  background-color: #121c2d;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; /* Espaço entre texto e ícone */
+
+  border-radius: 9999px;
+  padding: 0.3rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+
+  white-space: nowrap; /* Impede que o texto quebre a linha */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1a2b46; /* Tom mais claro no hover */
+}
+
+.cta-icon {
+  width: 1.3rem; /* ~20px */
+  height: auto;
+}
+
+/* --- Media Queries para Responsividade (Mobile-First) --- */
+
+/* Telas de tablet e menores (esconde a logo) */
+@media (max-width: 1024px) {
+  .logo-link {
+    display: none;
+  }
+  .inner {
+    justify-content: space-between; /* Ajusta o espaço sem a logo */
+  }
+}
+
+/* Telas de celular (esconde a navegação) */
+@media (max-width: 768px) {
+  .nav {
+    gap: 0.3rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .cta-icon {
+    width: 0.8rem; /* ~20px */
+    height: auto;
+  }
+}
