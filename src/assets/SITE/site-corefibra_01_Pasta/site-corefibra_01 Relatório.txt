@@ -1,0 +1,97 @@
+Relatório de pacote
+
+-----------------------------------------------------------------------------
+Documento:
+Nome: site-corefibra_01.ai
+Modo de cor: Cor RGB
+Perfil de cor: sRGB IEC61966-2.1
+Unidades da régua: pixels
+Dimensões da prancheta: 1920 px x 9870,3838 px
+Mostrar imagens no modo de contorno: DESATIVADO
+Realçar fontes substituídas: DESATIVADO
+Realçar glifos substituídos: DESATIVADO
+Preservar capacidade de edição do texto
+Simular papel colorido: DESATIVADO
+
+-----------------------------------------------------------------------------
+Objetos de cor especial:
+AZUL-ESCALA (RGB)
+
+-----------------------------------------------------------------------------
+Fontes ausentes:NENHUM
+
+-----------------------------------------------------------------------------
+Fontes protegidas que não foram empacotadas:
+Inter Regular (Fontes da Adobe)
+Inter Medium (Fontes da Adobe)
+Inter Bold (Fontes da Adobe)
+Inter Tight SemiBold (Fontes da Adobe)
+
+-----------------------------------------------------------------------------
+Fontes:
+Big Shoulders Display Black (TrueType)
+Big Shoulders Display Medium (TrueType)
+
+-----------------------------------------------------------------------------
+Fontes incorporadas:
+NENHUM
+
+-----------------------------------------------------------------------------
+Vínculos ausentes:
+NENHUM
+
+-----------------------------------------------------------------------------
+Imagens vinculadas:
+
+D:\LojaGraphica\2025\02625-CoreVault_Site\05_AF\site-corefibra_01\IMG-INFRAESTRUTURA\PNG\Infraestrutura  1@2x.png
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 2587K, 920 por 720 pixels
+Dimensões: 460 por 360 pontos 
+Resolução: 144 por 144 pixels por polegada
+
+
+D:\LojaGraphica\2025\02625-CoreVault_Site\05_AF\site-corefibra_01\IMG-INFRAESTRUTURA\PNG\Infraestrutura  2@2x.png
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 2587K, 920 por 720 pixels
+Dimensões: 460 por 360 pontos 
+Resolução: 144 por 144 pixels por polegada
+
+
+D:\LojaGraphica\2025\02625-CoreVault_Site\05_AF\site-corefibra_01\IMG-INFRAESTRUTURA\PNG\Infraestrutura  3@2x.png
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 2587K, 920 por 720 pixels
+Dimensões: 460 por 360 pontos 
+Resolução: 144 por 144 pixels por polegada
+
+
+D:\LojaGraphica\2025\02625-CoreVault_Site\05_AF\site-corefibra_01\IMG-HERO\WebP\IMG-HERO@2x.webp
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 24015K, 3840 por 1601 pixels
+Dimensões: 1920 por 800,5 pontos 
+Resolução: 144 por 144 pixels por polegada
+
+
+D:\LojaGraphica\2025\02625-CoreVault_Site\05_AF\site-corefibra_01\IMG-TEC_CONFIAVEL\WebP\IMG-TEC_CONFIAVEL@2x.webp
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 8195K, 1489 por 1409 pixels
+Dimensões: 744,5 por 704,5 pontos 
+Resolução: 144 por 144 pixels por polegada
+
+
+D:\LojaGraphica\2025\02625-CoreVault_Site\05_AF\site-corefibra_01\IMG-GENTE-DE-FIBRA\WebP\IMG-GENTE-DE-FIBRA@2x.webp
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 11025K, 1680 por 1680 pixels
+Dimensões: 840 por 840 pontos 
+Resolução: 144 por 144 pixels por polegada

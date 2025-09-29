@@ -1,13 +1,21 @@
+---
+// Importa CSS global com Tailwind
+import "../styles.css";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="mytheme">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Code Connect</title>
 	</head>
-	<body>
+	<body class="bg-base-100 text-neutral">
 		<slot />
 	</body>
 </html>

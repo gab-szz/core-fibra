@@ -1,0 +1,28 @@
+/* styles.css */
+
+/* CSS global do projeto: importa Tailwind v4 */
+@import "tailwindcss";
+
+/* Habilita DaisyUI via diretiva */
+@plugin "daisyui";
+
+/* 🎨 AQUI definimos o seu tema customizado */
+@plugin "daisyui/theme" {
+  name: "mytheme"; /* O nome do seu tema */
+  default: true; /* Define este tema como o padrão */
+
+  /* Mapeando suas cores para as variáveis CSS do DaisyUI */
+  --color-primary: #b4e01e;
+  --color-secondary: #121c2d;
+  --color-accent: #68d391;
+  --color-neutral: #2d3748;
+  --color-base-100: #ffffff;
+  --color-info: #4299e1;
+  --color-success: #48bb78;
+  --color-warning: #ecc94b;
+  --color-error: #f56565;
+
+  /* Você também pode definir outras variáveis se precisar, como cor do texto */
+  --color-primary-content: #000000; /* Texto preto para o botão primário verde */
+  --color-secondary-content: #000000; /* Texto preto para o botão secundário laranja */
+}
