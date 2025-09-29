@@ -1,0 +1,74 @@
+.custom-font {
+  font-family: 'Big Shoulders', sans-serif;
+}
+
+.container__hero {
+  /* 1. Propriedades de fundo */
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* 2. Layout da seção */
+  height: calc(100vh - 80px);
+  width: 100%;
+  color: white;
+
+  /* CRUCIAL: Ativa o Flexbox na seção hero */
+  display: flex;
+  /* Centraliza o conteúdo verticalmente para alinhamento ideal */
+  align-items: center;
+  padding: 0 6%;
+}
+
+.container__texto {
+  width: 60%; /* Ajustado para deixar espaço para a imagem 3D */
+  max-width: 900px;
+  padding-right: 40px;
+}
+
+/* --- TÍTULO (h1) --- */
+.titulo__hero {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.destaque {
+  color: #a9d143;
+}
+
+/* --- PARÁGRAFO (p) --- */
+.texto__descricao {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+/* --- BOTÃO (a) --- */
+.botao__proposta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+
+  /* Estilização do botão */
+  background-color: #a9d143;
+  color: #121212;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 7px 30px;
+  border-radius: 9999px; /* Formato pilula/arredondado */
+  transition: background-color 0.3s;
+}
+
+.botao__proposta:hover {
+  background-color: #c4e365;
+}
+
+.texto__botao {
+  margin: 0;
+}

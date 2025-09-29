@@ -1,11 +1,11 @@
 // Tipagem para a prop 'logo'
 // Usamos o tipo 'ImageMetadata' do Astro
-import type { ImageMetadata } from "astro";
-import React from "react";
+import type { ImageMetadata } from 'astro'
+import React from 'react'
 
 // 1. Defina a interface para as props
 interface HeaderProps {
-  logo: ImageMetadata;
+  logo: ImageMetadata
 }
 
 // 2. Desestruture a prop 'logo'
@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

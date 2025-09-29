@@ -1,14 +1,14 @@
 /* styles.css */
 
 /* CSS global do projeto: importa Tailwind v4 */
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Habilita DaisyUI via diretiva */
 @plugin "daisyui";
 
 /* 🎨 AQUI definimos o seu tema customizado */
 @plugin "daisyui/theme" {
-  name: "mytheme"; /* O nome do seu tema */
+  name: 'mytheme'; /* O nome do seu tema */
   default: true; /* Define este tema como o padrão */
 
   /* Mapeando suas cores para as variáveis CSS do DaisyUI */
