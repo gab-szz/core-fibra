@@ -1,0 +1,85 @@
+.custom-font {
+  font-family: 'Big Shoulders', sans-serif;
+}
+
+.container__conectividade {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.elementos__conectividade {
+  margin-top: 2%;
+  /* Mude de 500px para um valor que acomode 3 colunas largas */
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adicione width: 100% para que ele ocupe o máximo do container pai (até 1000px) */
+  width: 100%;
+}
+
+.titulo__conectividade {
+  font-family: 'Big Shoulders', sans-serif;
+  margin-top: 5%;
+  font-size: 3rem;
+  line-height: 50px;
+  font-weight: 800;
+  color: #a9d143;
+}
+
+.caracteristicas__conectividade {
+  margin-top: 3%;
+  display: flex;
+  gap: 60px;
+}
+
+.caracteristica__itens {
+  font-family: 'Big Shoulders', sans-serif;
+  white-space: nowrap;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #121c2d;
+
+  display: flex;
+  gap: 5px;
+}
+
+.container__descricoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  color: #121c2d;
+}
+
+.descricao__item {
+  background-color: #ecffb0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  padding: 20px;
+  height: 100%;
+  gap: 15px;
+}
+
+.texto__descricao {
+  color: #121c2d;
+  text-align: left;
+  /* Garante que o texto ocupe todo o espaço disponível restante no bloco (necessário com flex-direction: column) */
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+}

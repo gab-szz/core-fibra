@@ -1,0 +1,84 @@
+---
+import './Conectividade.css'
+import { Image } from 'astro:assets'
+import iconeConectividade from '../../assets/images/elements/SVG/Icon-conectividade.svg'
+import iconeSeta from '../../assets/images/elements/SVG/SETA-VERDE.svg'
+import downloadIcone from '../../assets/images/elements/WebP/icon Simetria @0.5x.webp'
+import wifiIcone from '../../assets/images/elements/WebP/icon SLA real@0.5x.webp'
+import connectIcone from '../../assets/images/elements/WebP/icon Redundância@0.5x.webp'
+import monitoringIcone from '../../assets/images/elements/WebP/icon Monitoramento@0.5x.webp'
+import supportIcone from '../../assets/images/elements/WebP/icon Suporte@0.5x.webp'
+import locationIcone from '../../assets/images/elements/WebP/icon Localização@0.5x.webp'
+
+const caracteristicas = [
+  'INTERNET MAIS RÁPIDA',
+  'REDE MAIS ESTÁVEL',
+  'SUPORTE HUMANO E AGIL',
+]
+
+const descricoes = [
+  {
+    icone: downloadIcone,
+    texto: 'SIMETRIA DOWNLOAD/UPLOAD EM TODOS OS PLANOS.',
+  },
+  { icone: wifiIcone, texto: 'SLA REAL COM ATÉ 99% DE UPTIME.' },
+  {
+    icone: connectIcone,
+    texto: 'REDUNDÂNCIA ALINHADA AO NÍVEL DA SUA MISSÃO.',
+  },
+  { icone: monitoringIcone, texto: 'MONITORAMENTO ATIVO DA REDE.' },
+  { icone: supportIcone, texto: 'SUPORTE TÉCNICO QUE RESOLVE.' },
+  { icone: locationIcone, texto: 'LOCALIZAÇÃO ESTRATÉGICA.' },
+]
+---
+
+<section class="container__conectividade">
+  <div class="elementos__conectividade">
+    <Image
+      src={iconeConectividade}
+      alt="Ícone conectividade"
+      width={120}
+      height={120}
+      class="icone__conectividade"
+    />
+    <h1 class="titulo__conectividade">
+      CONECTIVIDADE DE PONTA, PERTO DO SEU NEGÓCIO.
+    </h1>
+    <div class="caracteristicas__conectividade">
+      {
+        caracteristicas.map((caracteristica) => (
+          <div class="caracteristica__itens">
+            <Image
+              src={iconeSeta}
+              alt="Ícone seta verde"
+              width={25}
+              height={25}
+            />
+            {caracteristica}
+          </div>
+        ))
+      }
+    </div>
+    <div class="caracteristica__itens">
+      <Image src={iconeSeta} alt="Ícone seta verde" width={25} height={25} />
+      PARCERIA E COMPROMISSO COM O SEU CRESCIMENTO
+    </div>
+
+    <div class="container__descricoes">
+      {
+        descricoes.map((descricao) => (
+          <div class="descricao__item">
+            <Image
+              src={descricao.icone}
+              alt="Ícone descrição"
+              width={50}
+              height={50}
+            />
+            <p class="texto__descricao">{descricao.texto}</p>
+          </div>
+        ))
+      }
+    </div>
+    <button>teste</button>
+  </div>
+</section>
