@@ -85,7 +85,7 @@
 /* Telas de celular (esconde a navegação) */
 @media (max-width: 768px) {
   .nav {
-    gap: 0.3rem;
+    gap: 1rem;
   }
 
   .nav-link {
@@ -101,5 +101,15 @@
   .cta-icon {
     width: 0.8rem; /* ~20px */
     height: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .nav {
+    gap: 1.25rem;
+  }
+
+  .cta-button {
+    display: none;
   }
 }

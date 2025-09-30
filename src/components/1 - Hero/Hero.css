@@ -12,11 +12,10 @@
   /* 2. Layout da seção */
   height: calc(100vh - 80px);
   width: 100%;
-  color: white;
+  color: #a9d143;
 
   /* CRUCIAL: Ativa o Flexbox na seção hero */
   display: flex;
-  /* Centraliza o conteúdo verticalmente para alinhamento ideal */
   align-items: center;
   padding: 0 6%;
 }
@@ -36,15 +35,16 @@
 }
 
 .destaque {
-  color: #a9d143;
+  color: white;
 }
 
 /* --- PARÁGRAFO (p) --- */
 .texto__descricao {
-  font-size: 1.4rem;
-  line-height: 1.5;
+  font-size: 1.65rem;
+  line-height: 1.4;
   margin-bottom: 40px;
-  max-width: 500px;
+  max-width: 600px;
+  color: white;
 }
 
 /* --- BOTÃO (a) --- */
@@ -71,4 +71,43 @@
 
 .texto__botao {
   margin: 0;
+}
+
+@media (max-width: 1280px) {
+  .titulo__hero {
+    font-size: 4rem;
+  }
+
+  .botao__proposta {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 790px) {
+  .texto__descricao {
+    font-size: 1.1rem;
+  }
+
+  .botao__proposta {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  .container__texto {
+    width: 80%; /* Ajustado para deixar espaço para a imagem 3D */
+    max-width: 900px;
+    padding-right: 10px;
+  }
+
+  .titulo__hero {
+    font-size: 3.25rem;
+    margin-bottom: 50px;
+  }
+
+  .texto__descricao {
+    margin-bottom: 50px;
+  }
 }
