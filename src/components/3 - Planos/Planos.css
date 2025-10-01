@@ -1,22 +1,337 @@
+/* Planos.css */
+
+/* ------------------------- */
+/* FONTES E ESTILOS GERAIS   */
+/* ------------------------- */
+.custom-font {
+  font-family: 'Big Shoulders', sans-serif;
+}
+
+/* ------------------------- */
+/* LAYOUT PRINCIPAL          */
+/* ------------------------- */
 .planos-section {
   background-color: var(--color-gray);
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2% 5%;
 }
 
 .planos-section__content {
-  padding-top: 5%;
   display: flex;
   justify-content: center;
-  gap: 125px;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .planos-section__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  gap: 2.55rem;
+  padding: 2.25rem;
+  max-width: 800px;
+  flex: 1;
 }
 
 .planos-section__image {
-  width: 30%;
+  width: 35%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* ------------------------- */
+/* TIPOGRAFIA                */
+/* ------------------------- */
+.planos-section__title {
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--color-green-primary);
+}
+
+.planos-section__description {
+  color: var(--color-dark-blue);
+  font-size: 2.25rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.planos-section__description--white {
+  color: var(--color-white);
+  font-size: 2.25rem;
+  line-height: 1.4;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ------------------------- */
+/* SEÇÃO DE PLANOS          */
+/* ------------------------- */
+.planos-section__plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.planos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.planos-list__item {
+  font-family: 'Big Shoulders', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border-top: 1.5px solid var(--color-green-light);
+  margin-bottom: 1.8rem;
+  padding-top: 1rem;
+}
+
+.planos-list__icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.planos-list__text {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.planos-list__title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--color-dark-blue);
+  margin: 0;
+}
+
+.planos-list__subtitle {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--color-dark-blue);
+  margin: 0;
+}
+
+/* ------------------------- */
+/* SEÇÃO DE CTA              */
+/* ------------------------- */
+.planos-section__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.planos-section__cta-button {
+  background-color: var(--color-green-primary);
+  color: var(--color-dark-blue);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 9999px;
+  padding: 0.3rem 1.5rem;
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 2.55rem;
+  font-weight: 900;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.planos-section__cta-button:hover {
+  background-color: var(--color-green-hover);
+}
+
+.planos-section__cta-button .arrow-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* ------------------------- */
+/* MEDIA QUERIES (Responsivo)*/
+/* ------------------------- */
+
+/* Telas menores de desktop (abaixo de 1600px) */
+@media (max-width: 1600px) {
+  .planos-section__title {
+    font-size: 4.5rem;
+  }
+  .planos-section__description,
+  .planos-section__description--white {
+    font-size: 2rem;
+  }
+  .planos-list__title,
+  .planos-list__subtitle {
+    font-size: 2.8rem;
+  }
+  .planos-section__cta-button {
+    font-size: 2.5rem;
+  }
+}
+
+/* Laptops e tablets grandes (abaixo de 1200px) */
+@media (max-width: 1200px) {
+  .planos-section__content {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+  .planos-section__text {
+    max-width: none;
+    align-items: center;
+  }
+  .planos-section__image {
+    width: 50%;
+    max-width: 400px;
+  }
+  .planos-section__title {
+    font-size: 4rem;
+  }
+  .planos-section__description,
+  .planos-section__description--white {
+    font-size: 1.8rem;
+    max-width: 600px;
+  }
+  .planos-list__title,
+  .planos-list__subtitle {
+    font-size: 2.25rem;
+  }
+  .planos-section__cta-button {
+    font-size: 2.25rem;
+  }
+}
+
+/* Tablets em modo retrato (abaixo de 992px) */
+@media (max-width: 992px) {
+  .planos-section {
+    padding: 5% 5%;
+  }
+  .planos-section__content {
+    gap: 2.5rem;
+  }
+  .planos-section__image {
+    width: 60%;
+    max-width: 350px;
+  }
+  .planos-section__title {
+    font-size: 3.5rem;
+  }
+  .planos-section__description,
+  .planos-section__description--white {
+    font-size: 1.6rem;
+  }
+  .planos-list__item {
+    gap: 1rem;
+  }
+  .planos-list__text {
+    flex-direction: column;
+    white-space: normal;
+  }
+  .planos-list__icon {
+    width: 35px;
+    height: 35px;
+  }
+  .planos-list__title,
+  .planos-list__subtitle {
+    font-size: 2.5rem;
+  }
+  .planos-section__cta-button {
+    font-size: 1.8rem;
+    padding: 0.5rem 1.8rem;
+  }
+}
+
+/* Celulares grandes e tablets pequenos (abaixo de 768px) */
+@media (max-width: 768px) {
+  .planos-section {
+    padding: 8% 5%;
+  }
+  .planos-section__content {
+    gap: 2rem;
+  }
+  .planos-section__text {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .planos-section__image {
+    width: 70%;
+    max-width: 300px;
+  }
+  .planos-section__title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  .planos-section__description,
+  .planos-section__description--white {
+    font-size: 1.4rem;
+  }
+  .planos-list__item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.8rem;
+  }
+
+  .planos-list__title,
+  .planos-list__subtitle {
+    font-size: 2rem;
+  }
+  .planos-section__cta-button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Celulares (abaixo de 576px) */
+@media (max-width: 576px) {
+  .planos-section__content {
+    gap: 1.5rem;
+  }
+  .planos-section__text {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  .planos-section__image {
+    width: 80%;
+    max-width: 250px;
+  }
+  .planos-section__title {
+    font-size: 2.5rem;
+  }
+  .planos-section__description,
+  .planos-section__description--white {
+    font-size: 1.2rem;
+  }
+  .planos-list__item {
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .planos-list__icon {
+    width: 30px;
+    height: 30px;
+  }
+  .planos-list__title,
+  .planos-list__subtitle {
+    font-size: 1.6rem;
+  }
+  .planos-section__cta-button {
+    font-size: 1.2rem;
+    padding: 0.4rem 1.2rem;
+  }
+  .planos-section__cta-button .arrow-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
