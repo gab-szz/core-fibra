@@ -36,8 +36,8 @@
 }
 
 .planos-section__image {
-  width: 35%;
-  max-width: 500px;
+  width: 40%;
+  max-width: 700px;
   height: auto;
 }
 
@@ -129,7 +129,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin-top: 2%;
+  margin: 1.5% 0 4% 0;
   text-align: center;
 }
 
@@ -166,11 +166,11 @@
 /* Telas menores de desktop (abaixo de 1600px) */
 @media (max-width: 1600px) {
   .planos-section__title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .planos-section__description,
   .planos-section__description--white {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .planos-list__title,
   .planos-list__subtitle {
@@ -185,16 +185,17 @@
 @media (max-width: 1200px) {
   .planos-section__content {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
     text-align: center;
   }
   .planos-section__text {
     max-width: none;
     align-items: center;
+    gap: 1rem;
   }
   .planos-section__image {
     width: 50%;
-    max-width: 400px;
+    max-width: 700px;
   }
   .planos-section__title {
     font-size: 4rem;
