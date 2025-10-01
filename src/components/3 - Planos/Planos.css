@@ -1,0 +1,22 @@
+.planos-section {
+  background-color: var(--color-gray);
+  height: 100vh;
+}
+
+.planos-section__content {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 125px;
+}
+
+.planos-section__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.planos-section__image {
+  width: 30%;
+}

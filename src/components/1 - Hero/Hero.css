@@ -20,7 +20,7 @@
   /* Layout */
   height: calc(100vh - 80px); /* Ajustado para um header padrão de 80px */
   min-height: 600px; /* Altura mínima para evitar achatamento em telas curtas */
-  color: #b4e01e;
+  color: var(--color-green-primary);
 
   display: flex;
   align-items: center; /* Alinha o conteúdo verticalmente */
@@ -47,13 +47,13 @@
 }
 
 .hero-section__title--highlight {
-  color: white;
+  color: var(--color-white);
 }
 
 .hero-section__description {
   font-size: 1.75rem;
   line-height: 1.5;
-  color: white;
+  color: var(--color-white);
   margin: 0;
   margin-bottom: 3.5rem; /* Espaçamento mais consistente com rem */
   max-width: 600px;
@@ -70,8 +70,8 @@
 
   white-space: nowrap;
 
-  background-color: #b4e01e;
-  color: #121212;
+  background-color: var(--color-green-primary);
+  color: var(--color-black);
   font-size: 2rem;
   font-weight: 900;
   text-decoration: none;
@@ -81,7 +81,7 @@
 }
 
 .hero-section__cta:hover {
-  background-color: #c4e365;
+  background-color: var(--color-green-hover);
 }
 
 .hero-section__cta-icon {

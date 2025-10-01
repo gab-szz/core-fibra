@@ -11,7 +11,7 @@
 /* LAYOUT PRINCIPAL          */
 /* ------------------------- */
 .conectividade-section {
-  background-color: white;
+  background-color: var(--color-white);
   min-height: 100vh; /* Garante altura mínima, mas permite expandir */
   padding: 2% 5%; /* Espaçamento vertical e horizontal */
   display: flex;
@@ -40,7 +40,7 @@
   font-size: 6rem;
   line-height: 1.1; /* Usar unidade sem medida para melhor escalabilidade */
   font-weight: 800;
-  color: #a9d143;
+  color: var(--color-green-secondary);
   max-width: 1000px;
   margin-top: 3%;
 }
@@ -85,11 +85,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  color: #121c2d;
+  color: var(--color-dark-blue);
 }
 
 .description-card {
-  background-color: #ecffb0;
+  background-color: var(--color-green-light);
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Alinha itens à esquerda */
@@ -113,7 +113,7 @@
 }
 
 .description-card__text {
-  color: #121c2d;
+  color: var(--color-dark-blue);
   flex-grow: 1; /* Ocupa o espaço restante */
   display: flex;
   align-items: center;
@@ -127,8 +127,8 @@
 /* BOTÃO DE AÇÃO             */
 /* ------------------------- */
 .conectividade-section__cta-button {
-  background-color: #b4e01e;
-  color: #121c2d;
+  background-color: var(--color-green-primary);
+  color: var(--color-dark-blue);
   border: none;
   cursor: pointer;
   display: flex;
@@ -145,7 +145,7 @@
 }
 
 .conectividade-section__cta-button:hover {
-  background-color: #c4e365;
+  background-color: var(--color-green-hover);
 }
 
 .conectividade-section__cta-button .arrow-icon {

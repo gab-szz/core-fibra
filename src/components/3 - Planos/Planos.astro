@@ -1,0 +1,28 @@
+---
+import './Planos.css'
+import { Image } from 'astro:assets'
+import iconeSeta from '../../assets/images/elements/SVG/SETA-VERDE.svg'
+import iconeSetaBranca from '../../assets/images/elements/SVG/SETA-BRANCA-BOTAO.svg'
+import imagemPessoas from '../../assets/images/IMG-TEC_CONFIAVEL@2x.webp'
+---
+
+<section class="planos-section">
+  <div class="planos-section__content">
+    <div class="planos-section__text">
+      <h2>TECNOLOGIA CONFIÁVEL COM FOCO TOTAL EM RESULTADO.</h2>
+      <p>
+        Especialista em infraestrutura e negócios, a CoreFibra garante conexão
+        robusta, escalável e sob medida para cada operação.
+      </p>
+      <p>
+        Do diagnóstico à ativação e expansão, oferecemos acompanhamento próximo
+        e especializado.
+      </p>
+    </div>
+    <Image
+      src={imagemPessoas}
+      alt="Pessoas utilizando tecnologia"
+      class="planos-section__image"
+    />
+  </div>
+</section>

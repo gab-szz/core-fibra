@@ -6,6 +6,23 @@
 /* Habilita DaisyUI via diretiva */
 @plugin "daisyui";
 
+/* ======================== */
+/* VARIÁVEIS CSS GLOBAIS    */
+/* ======================== */
+:root {
+  /* Cores principais da marca */
+  --color-green-primary: #b4e01e;
+  --color-green-secondary: #a9d143;
+  --color-green-hover: #c4e365;
+  --color-green-light: #ecffb0;
+
+  /* Cores neutras */
+  --color-dark-blue: #121c2d;
+  --color-black: #121212;
+  --color-white: #ffffff;
+  --color-gray: #96968c;
+}
+
 /* 🎨 AQUI definimos o seu tema customizado */
 @plugin "daisyui/theme" {
   name: 'mytheme'; /* O nome do seu tema */
