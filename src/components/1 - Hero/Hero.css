@@ -1,113 +1,212 @@
+/* Hero.css */
+
+/* ------------------------- */
+/* FONTES E ESTILOS GERAIS   */
+/* ------------------------- */
 .custom-font {
   font-family: 'Big Shoulders', sans-serif;
 }
 
-.container__hero {
-  /* 1. Propriedades de fundo */
+/* ------------------------- */
+/* LAYOUT PRINCIPAL          */
+/* ------------------------- */
+.hero-section {
+  /* Fundo */
   background-image: var(--hero-bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  /* 2. Layout da seção */
-  height: calc(100vh - 80px);
-  width: 100%;
-  color: #a9d143;
+  /* Layout */
+  height: calc(100vh - 80px); /* Ajustado para um header padrão de 80px */
+  min-height: 600px; /* Altura mínima para evitar achatamento em telas curtas */
+  color: #b4e01e;
 
-  /* CRUCIAL: Ativa o Flexbox na seção hero */
   display: flex;
-  align-items: center;
-  padding: 0 6%;
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  padding: 4% 8%;
 }
 
-.container__texto {
-  width: 60%; /* Ajustado para deixar espaço para a imagem 3D */
+.hero-section__content {
+  width: 60%;
   max-width: 900px;
-  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* --- TÍTULO (h1) --- */
-.titulo__hero {
-  font-size: 5rem;
+/* ------------------------- */
+/* TIPOGRAFIA                */
+/* ------------------------- */
+.hero-section__title {
+  font-size: 6rem;
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 3rem; /* Espaçamento mais consistente com rem */
 }
 
-.destaque {
+.hero-section__title--highlight {
   color: white;
 }
 
-/* --- PARÁGRAFO (p) --- */
-.texto__descricao {
-  font-size: 1.65rem;
-  line-height: 1.4;
-  margin-bottom: 40px;
+.hero-section__description {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+  margin-bottom: 3.5rem; /* Espaçamento mais consistente com rem */
   max-width: 600px;
-  color: white;
 }
 
-/* --- BOTÃO (a) --- */
-.botao__proposta {
+/* ------------------------- */
+/* BOTÃO (CTA)               */
+/* ------------------------- */
+.hero-section__cta {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   width: fit-content;
 
-  /* Estilização do botão */
-  background-color: #a9d143;
+  white-space: nowrap;
+
+  background-color: #b4e01e;
   color: #121212;
   font-size: 2rem;
   font-weight: 900;
   text-decoration: none;
-  padding: 7px 30px;
-  border-radius: 9999px; /* Formato pilula/arredondado */
-  transition: background-color 0.3s;
+  padding: 12px 35px;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
 }
 
-.botao__proposta:hover {
+.hero-section__cta:hover {
   background-color: #c4e365;
 }
 
-.texto__botao {
-  margin: 0;
+.hero-section__cta-icon {
+  width: 2.2rem; /* Controlado via CSS para ser responsivo */
+  height: 2.2rem; /* Controlado via CSS para ser responsivo */
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 1280px) {
-  .titulo__hero {
+.hero-section__cta:hover .hero-section__cta-icon {
+  transform: translateX(5px); /* Efeito sutil de movimento no hover */
+}
+
+/* ------------------------- */
+/* MEDIA QUERIES (Responsivo)*/
+/* ------------------------- */
+
+/* Telas Ultra-Wide (acima de 1800px) */
+@media (min-width: 1800px) {
+  .hero-section__content {
+    max-width: 1200px;
+  }
+  .hero-section__title {
+    font-size: 7.5rem;
+  }
+  .hero-section__description {
+    font-size: 2.25rem;
+    max-width: 800px;
+  }
+  .hero-section__cta {
+    font-size: 2.5rem;
+    padding: 15px 40px;
+  }
+  .hero-section__cta-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+/* Laptops (abaixo de 1440px) */
+@media (max-width: 1440px) {
+  .hero-section__title {
+    font-size: 5rem;
+  }
+  .hero-section__description {
+    font-size: 1.5rem;
+    max-width: 550px;
+  }
+  .hero-section__cta {
+    font-size: 1.8rem;
+  }
+  .hero-section__cta-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Tablets em modo paisagem (abaixo de 992px) */
+@media (max-width: 992px) {
+  .hero-section {
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+  }
+  .hero-section__content {
+    width: 85%; /* Ocupa mais espaço na tela */
+    max-width: 700px;
+    align-items: center; /* Centraliza o botão */
+  }
+  .hero-section__title {
     font-size: 4rem;
   }
-
-  .botao__proposta {
-    font-size: 1.1rem;
+  .hero-section__description {
+    font-size: 1.3rem;
+  }
+  .hero-section__cta {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+  }
+  .hero-section__cta-icon {
+    width: 1.7rem;
+    height: 1.7rem;
   }
 }
 
-@media (max-width: 790px) {
-  .texto__descricao {
-    font-size: 1.1rem;
+/* Tablets em modo retrato (abaixo de 768px) */
+@media (max-width: 768px) {
+  .hero-section__content {
+    width: 100%; /* Ocupa toda a largura */
   }
-
-  .botao__proposta {
-    font-size: 0.8rem;
-    padding: 7px 10px;
-    gap: 5px;
+  .hero-section__title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .hero-section__description {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero-section__cta {
+    font-size: 1.2rem;
+    padding: 10px 25px;
+  }
+  .hero-section__cta-icon {
+    width: 1.4rem;
+    height: 1.4rem;
   }
 }
 
-@media (max-width: 580px) {
-  .container__texto {
-    width: 80%; /* Ajustado para deixar espaço para a imagem 3D */
-    max-width: 900px;
-    padding-right: 10px;
+/* Celulares (abaixo de 576px) */
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 8% 6%;
   }
-
-  .titulo__hero {
-    font-size: 3.25rem;
-    margin-bottom: 50px;
+  .hero-section__title {
+    font-size: 3rem;
+    line-height: 1.2;
   }
-
-  .texto__descricao {
-    margin-bottom: 50px;
+  .hero-section__description {
+    font-size: 1.1rem;
+  }
+  .hero-section__cta {
+    font-size: 1rem;
+    padding: 8px 20px;
+    gap: 10px;
+  }
+  .hero-section__cta-icon {
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }

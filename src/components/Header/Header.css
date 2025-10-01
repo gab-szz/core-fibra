@@ -3,7 +3,7 @@
 }
 /* Base do Header */
 .header {
-  height: 80px;
+  height: 100px;
   background-color: #b4e01e;
   border-bottom: 1px solid #e5e7eb;
   color: #2e2c31;
@@ -15,7 +15,7 @@
 
 /* Logo */
 .logo-image {
-  height: 2rem; /* ~20px */
+  height: 2.5rem;
   width: auto;
   display: block; /* Remove espaço extra abaixo da imagem */
 }
@@ -28,11 +28,11 @@
 }
 
 .nav-link {
-  font-size: 1.125rem; /* ~18px */
+  font-size: 1.5rem; /* ~18px */
   font-weight: 700;
   text-decoration: none;
   color: inherit; /* Herda a cor do .header */
-  padding: 0.2rem;
+  padding: 0.5rem;
   transition: all 0.3s ease; /* Transição suave */
 }
 
@@ -54,7 +54,7 @@
 
   border-radius: 9999px;
   padding: 0.3rem 1.5rem;
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   font-weight: 700;
 
   white-space: nowrap; /* Impede que o texto quebre a linha */

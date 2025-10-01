@@ -1,38 +1,32 @@
 ---
 import './Hero.css'
-
-// 1. Importe sua imagem de fundo (substitua o caminho real)
 import { Image } from 'astro:assets'
 import heroImage from '../../assets/images/IMG-HERO2.webp'
 import iconeSeta from '../../assets/images/elements/SVG/SETA-BRANCA-BOTAO.svg'
 
-// 2. Acesse a URL gerada pelo Astro
 const imageUrl = heroImage.src
 ---
 
 <section
-  class="container__hero"
+  class="hero-section"
   style={`--hero-bg: url(${imageUrl})`}
   aria-label="Seção de destaque"
 >
-  <div class="container__texto">
-    <h1 class="custom-font titulo__hero">
-      FIBRA ÓPTICA <span class="destaque">SEMPRE ON</span>, ONDE SUA OPERAÇÃO
-      PRECISA.
+  <div class="hero-section__content">
+    <h1 class="custom-font hero-section__title">
+      FIBRA ÓPTICA <span class="hero-section__title--highlight">SEMPRE ON</span
+      >, ONDE SUA OPERAÇÃO PRECISA.
     </h1>
-    <p class="texto__descricao">
+    <p class="hero-section__description">
       A CoreFibra conecta empresas do Centro-Oeste com links de alta
       performance, suporte humano e presença local.
     </p>
-    <a class="botao__proposta custom-font">
-      <span class="texto__botao">SOLICITE UMA PROPOSTA PERSONALIZADA</span>
-
+    <a href="#contato" class="hero-section__cta custom-font">
+      <span>SOLICITE UMA PROPOSTA PERSONALIZADA</span>
       <Image
         src={iconeSeta}
         alt="Ícone de seta"
-        width={20}
-        height={20}
-        class="cta-icon"
+        class="hero-section__cta-icon"
       />
     </a>
   </div>

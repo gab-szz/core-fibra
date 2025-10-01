@@ -1,85 +1,271 @@
+/* Conectividade.css */
+
+/* ------------------------- */
+/* FONTES E ESTILOS GERAIS   */
+/* ------------------------- */
 .custom-font {
   font-family: 'Big Shoulders', sans-serif;
 }
 
-.container__conectividade {
-  height: 100vh;
+/* ------------------------- */
+/* LAYOUT PRINCIPAL          */
+/* ------------------------- */
+.conectividade-section {
   background-color: white;
+  min-height: 100vh; /* Garante altura mínima, mas permite expandir */
+  padding: 2% 5%; /* Espaçamento vertical e horizontal */
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.elementos__conectividade {
-  margin-top: 2%;
-  /* Mude de 500px para um valor que acomode 3 colunas largas */
-  max-width: 1000px;
-
+.conectividade-section__content {
+  width: 100%;
+  max-width: 1800px; /* Limita a largura máxima em telas muito grandes */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Adicione width: 100% para que ele ocupe o máximo do container pai (até 1000px) */
-  width: 100%;
 }
 
-.titulo__conectividade {
+/* ------------------------- */
+/* ELEMENTOS DE CABEÇALHO    */
+/* ------------------------- */
+.conectividade-section__icon {
+  width: 200px;
+  height: 200px;
+}
+
+.conectividade-section__title {
   font-family: 'Big Shoulders', sans-serif;
-  margin-top: 5%;
-  font-size: 3rem;
-  line-height: 50px;
+  font-size: 6rem;
+  line-height: 1.1; /* Usar unidade sem medida para melhor escalabilidade */
   font-weight: 800;
   color: #a9d143;
-}
-
-.caracteristicas__conectividade {
+  max-width: 1000px;
   margin-top: 3%;
-  display: flex;
-  gap: 60px;
 }
 
-.caracteristica__itens {
+/* ------------------------- */
+/* LISTA DE CARACTERÍSTICAS  */
+/* ------------------------- */
+.conectividade-section__features {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* Substitua a linha 'gap: 100px;' por estas duas: */
+  column-gap: 100px; /* Mantém o espaço HORIZONTAL de 100px */
+  row-gap: 25px; /* Define um espaço VERTICAL menor (ex: 25px) quando a linha quebrar */
+}
+
+.feature-item {
   font-family: 'Big Shoulders', sans-serif;
   white-space: nowrap;
   align-items: center;
-  font-size: 1.75rem;
+  font-size: 3rem;
   font-weight: 900;
   color: #121c2d;
-
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
-.container__descricoes {
+.feature-item__arrow {
+  width: 40px;
+  height: 40px;
+}
+
+/* ------------------------- */
+/* GRADE DE DESCRIÇÕES       */
+/* ------------------------- */
+.description-grid {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-
+  gap: 50px;
   color: #121c2d;
 }
 
-.descricao__item {
+.description-card {
   background-color: #ecffb0;
   display: flex;
   flex-direction: column;
-  align-items: left;
-
+  align-items: flex-start; /* Alinha itens à esquerda */
+  text-align: left;
   padding: 20px;
   height: 100%;
   gap: 15px;
 }
 
-.texto__descricao {
-  color: #121c2d;
-  text-align: left;
-  /* Garante que o texto ocupe todo o espaço disponível restante no bloco (necessário com flex-direction: column) */
-  flex-grow: 1;
+.description-card__icon {
+  width: 80px;
+  height: 80px;
+}
 
+.description-card__divider {
+  width: 100%;
+  height: 5px;
+  background-color: #b4e01e;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.description-card__text {
+  color: #121c2d;
+  flex-grow: 1; /* Ocupa o espaço restante */
   display: flex;
   align-items: center;
-  justify-content: center;
-
   font-family: 'Big Shoulders', sans-serif;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 1.2;
+}
+
+/* ------------------------- */
+/* BOTÃO DE AÇÃO             */
+/* ------------------------- */
+.conectividade-section__cta-button {
+  background-color: #b4e01e;
+  color: #121c2d;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 5%;
+  border-radius: 9999px;
+  padding: 0.3rem 1.5rem;
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.conectividade-section__cta-button:hover {
+  background-color: #c4e365;
+}
+
+.conectividade-section__cta-button .arrow-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* ------------------------- */
+/* MEDIA QUERIES (Responsivo)*/
+/* ------------------------- */
+
+/* Telas menores de desktop (abaixo de 1920px) */
+@media (max-width: 1600px) {
+  .conectividade-section__title {
+    font-size: 5rem;
+  }
+  .feature-item,
+  .description-card__text {
+    font-size: 2.5rem;
+  }
+  .conectividade-section__cta-button {
+    font-size: 2.3rem;
+  }
+}
+
+/* Laptops e tablets grandes (abaixo de 1200px) */
+@media (max-width: 1200px) {
+  .conectividade-section__title {
+    font-size: 4rem;
+    max-width: 800px;
+  }
+  .conectividade-section__features {
+    flex-direction: column; /* Empilha as características */
+    gap: 20px;
+    align-items: center;
+  }
+  .feature-item {
+    font-size: 2.2rem;
+  }
+  .description-grid {
+    grid-template-columns: repeat(2, 1fr); /* Grade de 2 colunas */
+    gap: 30px;
+  }
+  .description-card__text {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablets em modo retrato (abaixo de 992px) */
+@media (max-width: 992px) {
+  .conectividade-section__icon {
+    width: 150px;
+    height: 150px;
+  }
+  .conectividade-section__title {
+    font-size: 3.5rem;
+  }
+  .feature-item {
+    font-size: 1.8rem;
+  }
+  .description-card__text {
+    font-size: 1.8rem;
+  }
+  .conectividade-section__cta-button {
+    font-size: 1.8rem;
+    padding: 0.5rem 1.8rem;
+  }
+}
+
+/* Celulares grandes e tablets pequenos (abaixo de 768px) */
+@media (max-width: 768px) {
+  .conectividade-section {
+    padding: 8% 5%; /* Aumenta o espaçamento vertical em telas menores */
+  }
+  .conectividade-section__title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  .feature-item {
+    font-size: 1.3rem;
+    white-space: normal; /* Permite que o texto quebre a linha */
+  }
+
+  .description-card__text {
+    font-size: 1.6rem;
+  }
+  .conectividade-section__cta-button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Celulares (abaixo de 576px) */
+@media (max-width: 576px) {
+  .conectividade-section__icon {
+    width: 120px;
+    height: 120px;
+  }
+  .conectividade-section__title {
+    font-size: 2.5rem;
+  }
+  .feature-item {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .feature-item__arrow {
+    width: 25px;
+    height: 25px;
+  }
+  .description-card__icon {
+    width: 60px;
+    height: 60px;
+  }
+  .description-card__text {
+    font-size: 1.4rem;
+  }
+  .conectividade-section__cta-button {
+    font-size: 1.2rem;
+  }
+  .conectividade-section__cta-button .arrow-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
