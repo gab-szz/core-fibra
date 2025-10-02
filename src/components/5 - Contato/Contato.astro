@@ -1,0 +1,51 @@
+---
+import './Contato.css'
+import { Image } from 'astro:assets'
+import genteFibra from '../../assets/images/IMG-GENTE-DE-FIBRA2x.webp'
+import setas from '../../assets/images/elements/WebP/Ativo 12@0.75x.webp'
+---
+
+<section class="gente-section">
+  <div class="gente-title-img">
+    <h2 class="gente-title">GENTE <br /> DE <br />FIBRA</h2>
+    <Image src={genteFibra} alt="Imagem gente de Fibra" class="gente-img" />
+  </div>
+  <div class="gente-text__container">
+    <p class="gente-text__description">
+      Com estrutura em expansão e compromisso com a conectividade do
+      Centro-Oeste, a CoreFibra está pronta para ser referência em fibra óptica.
+    </p>
+    <p class="gente-text__description">
+      Nosso compromisso vai além de links de internet.
+    </p>
+    <p class="gente-text__description">
+      Estamos comprometidos com o avanço dos negócios e o desenvolvimento da
+      região com uma rede<span class="gente-text__highlight">
+        estável, moderna e preparada para o futuro.
+      </span>
+    </p>
+    <Image src={setas} alt="Setas" class="gente-setas" />
+  </div>
+  <div class="gente-contato__container">
+    <div class="gente-contato__texto">
+      <h2 class="gente-contato__titulo">Entre em contato.</h2>
+      <p class="gente-contato__descricao">
+        Fale agora com nosso time e descubra como a CoreFibra pode apoiar sua
+        operação.
+      </p>
+    </div>
+    <div class="gente-formulario__email">
+      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required />
+        <div class="gente-formulario__duplo">
+          <input type="text" name="empresa" placeholder="Empresa" required />
+          <input type="tel" name="telefone" placeholder="Telefone" required />
+        </div>
+        <input type="email" name="email" placeholder="E-mail" required />
+        <textarea name="mensagem" placeholder="Mensagem" rows="4" required
+        ></textarea>
+      </form>
+      <button type="submit">Enviar</button>
+    </div>
+  </div>
+</section>
