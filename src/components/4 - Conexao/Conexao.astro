@@ -1,0 +1,67 @@
+---
+import './Conexao.css'
+import { Image } from 'astro:assets'
+import iconeSeta from '../../assets/images/elements/SVG/SETA-VERDE.svg'
+import textura from '../../assets/images/elements/png/TEXTURA CORTADA.png'
+import Infraestrutura1 from '../../assets/images/infraestrutura/Infraestrutura  1 2x.webp'
+import Infraestrutura2 from '../../assets/images/infraestrutura/Infraestrutura  2 2x.webp'
+import Infraestrutura3 from '../../assets/images/infraestrutura/Infraestrutura  3 2x.webp'
+---
+
+<section class="conexao-section">
+  <div class="conexao-section__texto">
+    <h2 class="conexao-section__titulo">
+      MAIS QUE INTERNET.<br /> CONEXÃO DE VERDADE.
+    </h2>
+    <p class="conexao-section__descricao">
+      A CoreFibra conecta tecnologia e visão de negócio. Conhecemos os desafios
+      reais das operações e sabemos que uma rede confiável faz a diferença.
+    </p>
+    <p class="conexao-section__descricao">
+      Internet instável não é apenas uma queda de sinal. É pedido atrasado,
+      venda perdida, operação parada
+    </p>
+    <p class="conexao-section__destaque">Somos pessoas que acreditam que:</p>
+    <div class="conexao-section__imagens">
+      <div>
+        <p class="conexao-section__texto__imagem">
+          INFRAESTRUTURA<br /> CRÍTICA PRECISA <br /> DE GENTE <br />PREPARADA.
+        </p>
+        <Image
+          src={Infraestrutura1}
+          alt="Infraestrutura Crítica"
+          class="conexao-section__imagem"
+        />
+      </div>
+      <div>
+        <p class="conexao-section__texto__imagem">
+          A TECNOLOGIA <br />SÓ FAZ SENTIDO<br /> QUANDO RESOLVE
+          <br />PROBLEMAS REAIS.
+        </p>
+        <Image
+          src={Infraestrutura2}
+          alt="Infraestrutura Tecnológica"
+          class="conexao-section__imagem"
+        />
+      </div>
+      <div>
+        <p class="conexao-section__texto__imagem">
+          A ESTABILIDADE <br />DIGITAL COMEÇA <br />NO RELACIONAMENTO <br
+          />HUMANO.
+        </p>
+        <Image
+          src={Infraestrutura3}
+          alt="Infraestrutura de Relacionamento"
+          class="conexao-section__imagem"
+        />
+      </div>
+    </div>
+    <div class="conexao-section__botao">
+      <button class="cta-button__conexao custom-font">
+        FALE COM UM ESPECIALISTA
+        <Image src={iconeSeta} alt="Ícone de seta" class="cta-icon" />
+      </button>
+    </div>
+  </div>
+  <Image src={textura} alt="Textura" class="cta-texture" />
+</section>

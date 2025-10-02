@@ -3,15 +3,20 @@ import './Hero.css'
 import { Image } from 'astro:assets'
 import heroImage from '../../assets/images/IMG-HERO2.webp'
 import iconeSeta from '../../assets/images/elements/SVG/SETA-BRANCA-BOTAO.svg'
-
-const imageUrl = heroImage.src
 ---
 
-<section
-  class="hero-section"
-  style={`--hero-bg: url(${imageUrl})`}
-  aria-label="Seção de destaque"
->
+<section class="hero-section" aria-label="Seção de destaque">
+  <!-- Imagem de fundo usando Image do Astro -->
+  <div class="hero-section__background">
+    <Image
+      src={heroImage}
+      alt="Imagem de fundo do hero"
+      class="hero-section__background-image"
+      loading="eager"
+      decoding="async"
+    />
+  </div>
+
   <div class="hero-section__content">
     <h1 class="custom-font hero-section__title">
       FIBRA ÓPTICA <span class="hero-section__title--highlight">SEMPRE ON</span
