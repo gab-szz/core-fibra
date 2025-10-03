@@ -215,8 +215,11 @@
     line-height: 1.2;
   }
 
+  .rodape-section__center {
+    margin-left: 0;
+  }
+
   .rodape-section__nav {
-    flex-direction: column;
     gap: 1rem;
   }
 

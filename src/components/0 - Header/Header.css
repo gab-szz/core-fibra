@@ -114,3 +114,9 @@
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .nav {
+    gap: 0.25rem;
+  }
+}
