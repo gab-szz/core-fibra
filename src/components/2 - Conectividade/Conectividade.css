@@ -259,8 +259,16 @@
     width: 25px;
     height: 25px;
   }
+  .description-card {
+    padding: 15px;
+    gap: 10px;
+  }
   .description-card__icon {
     width: 60px;
+    height: 60px;
+  }
+  .description-localication__icon {
+    width: 45px;
     height: 60px;
   }
   .description-card__text {
@@ -272,5 +280,50 @@
   .conectividade-section__cta-button .arrow-icon {
     width: 25px;
     height: 25px;
+  }
+}
+
+/* Celulares muito pequenos (abaixo de 500px) */
+@media (max-width: 500px) {
+  .conectividade-section {
+    padding: 5% 3%;
+  }
+  .conectividade-section__title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  .description-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 4%;
+  }
+  .description-card {
+    padding: 12px;
+    gap: 8px;
+    min-height: auto;
+  }
+  .description-card__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .description-localication__icon {
+    width: 35px;
+    height: 50px;
+  }
+  .description-card__text {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+  .description-card__divider {
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+  .feature-item {
+    font-size: 1rem;
+  }
+  .conectividade-section__cta-button {
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
   }
 }
