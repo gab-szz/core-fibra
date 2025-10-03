@@ -19,7 +19,7 @@ import setas from '../../assets/images/elements/WebP/Ativo 12@0.75x.webp'
     <p class="gente-text__description">
       Nosso compromisso vai além de links de internet.
     </p>
-    <p class="gente-text__description">
+    <p class="gente-text__description" id="contact-form">
       Estamos comprometidos com o avanço dos negócios e o desenvolvimento da
       região com uma rede<span class="gente-text__highlight">
         estável, moderna e preparada para o futuro.
@@ -36,7 +36,11 @@ import setas from '../../assets/images/elements/WebP/Ativo 12@0.75x.webp'
       </p>
     </div>
     <div class="gente-formulario__email">
-      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <form
+        action="https://formsubmit.co/contato@corefibra.com"
+        method="POST"
+        class="gente-formulario"
+      >
         <input type="text" name="nome" placeholder="Nome" required />
         <div class="gente-formulario__duplo">
           <input type="text" name="empresa" placeholder="Empresa" required />
@@ -45,15 +49,15 @@ import setas from '../../assets/images/elements/WebP/Ativo 12@0.75x.webp'
         <input type="email" name="email" placeholder="E-mail" required />
         <textarea name="mensagem" placeholder="Mensagem" rows="4" required
         ></textarea>
+        <button type="submit" class="gente-formulario__botao custom-font">
+          Enviar
+          <Image
+            src={setaAzul}
+            alt="Ícone de seta azul"
+            class="cta-icon-seta__azul"
+          />
+        </button>
       </form>
-      <button type="submit" class="gente-formulario__botao custom-font">
-        Enviar
-        <Image
-          src={setaAzul}
-          alt="Ícone de seta azul"
-          class="cta-icon-seta__azul"
-        />
-      </button>
     </div>
   </div>
 </section>
