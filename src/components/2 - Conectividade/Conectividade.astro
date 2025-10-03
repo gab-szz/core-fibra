@@ -4,12 +4,12 @@ import { Image } from 'astro:assets'
 import iconeConectividade from '../../assets/images/elements/SVG/Icon-conectividade.svg'
 import iconeSeta from '../../assets/images/elements/SVG/SETA-VERDE.svg'
 import iconeSetaBranca from '../../assets/images/elements/SVG/SETA-BRANCA-BOTAO.svg'
-import downloadIcone from '../../assets/images/elements/WebP/icon Simetria @0.5x.webp'
-import wifiIcone from '../../assets/images/elements/WebP/icon SLA real@0.5x.webp'
-import connectIcone from '../../assets/images/elements/WebP/icon Redundância@0.5x.webp'
-import monitoringIcone from '../../assets/images/elements/WebP/icon Monitoramento@0.5x.webp'
-import supportIcone from '../../assets/images/elements/WebP/icon Suporte@0.5x.webp'
-import locationIcone from '../../assets/images/elements/WebP/icon Localização@0.5x.webp'
+import downloadIcone from '../../assets/images/elements/WebP/icon Simetria 0.75x.webp'
+import wifiIcone from '../../assets/images/elements/SVG/icon SLA real.svg'
+import connectIcone from '../../assets/images/elements/SVG/icon Redundância.svg'
+import monitoringIcone from '../../assets/images/elements/SVG/icon Monitoramento.svg'
+import supportIcone from '../../assets/images/elements/SVG/icon Suporte.svg'
+import locationIcone from '../../assets/images/elements/SVG/icon Localização.svg'
 
 // Todos os itens de características agora estão em um único array para facilitar a manutenção
 const caracteristicas = [
@@ -31,7 +31,6 @@ const descricoes = [
   },
   { icone: monitoringIcone, texto: 'MONITORAMENTO ATIVO DA REDE.' },
   { icone: supportIcone, texto: 'SUPORTE TÉCNICO QUE RESOLVE.' },
-  { icone: locationIcone, texto: 'LOCALIZAÇÃO ESTRATÉGICA.' },
 ]
 ---
 
@@ -75,6 +74,15 @@ const descricoes = [
           </div>
         ))
       }
+      <div class="description-card">
+        <Image
+          src={locationIcone}
+          alt="Ícone descrição"
+          class="description-localication__icon"
+        />
+        <div class="description-card__divider"></div>
+        <p class="description-card__text">LOCALIZAÇÃO ESTRATÉGICA.</p>
+      </div>
     </div>
 
     <button class="conectividade-section__cta-button">

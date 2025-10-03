@@ -66,7 +66,7 @@
 }
 
 .hero-section__description {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.75rem;
   line-height: 1.5;
   color: var(--color-white);
@@ -156,12 +156,8 @@
 
 /* Tablets em modo paisagem (abaixo de 992px) */
 @media (max-width: 992px) {
-  .hero-section {
-    align-items: center;
-    text-align: center; /* Centraliza o texto */
-  }
   .hero-section__content {
-    width: 85%; /* Ocupa mais espaço na tela */
+    width: 75%; /* Ocupa mais espaço na tela */
     max-width: 700px;
     align-items: center; /* Centraliza o botão */
   }
@@ -184,7 +180,7 @@
 /* Tablets em modo retrato (abaixo de 768px) */
 @media (max-width: 768px) {
   .hero-section__content {
-    width: 100%; /* Ocupa toda a largura */
+    width: 72%; /* Ocupa toda a largura */
   }
   .hero-section__title {
     font-size: 3.5rem;
@@ -205,10 +201,11 @@
 }
 
 /* Celulares (abaixo de 576px) */
-@media (max-width: 576px) {
+@media (max-width: 598px) {
   .hero-section {
     padding: 8% 6%;
   }
+
   .hero-section__title {
     font-size: 3rem;
     line-height: 1.2;

@@ -100,8 +100,13 @@
 }
 
 .description-card__icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+}
+
+.description-localication__icon {
+  width: 60px;
+  height: 100px;
 }
 
 .description-card__divider {

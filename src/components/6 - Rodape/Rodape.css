@@ -53,6 +53,7 @@
   flex: 1;
   display: flex;
   justify-content: left;
+  margin-left: 1rem;
 }
 
 .rodape-section__nav {
@@ -138,6 +139,7 @@
     flex-direction: column;
     text-align: center;
     gap: 3rem;
+    margin-bottom: 0;
   }
 
   .rodape-section__left,
@@ -205,7 +207,7 @@
 
   .rodape-section__content {
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   .rodape-section__title {
