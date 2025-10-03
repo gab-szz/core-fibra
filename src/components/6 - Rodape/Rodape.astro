@@ -1,0 +1,57 @@
+---
+import './Rodape.css'
+import { Image } from 'astro:assets'
+import logoRodape from '../../assets/images/elements/SVG/LOGO-COREFIBRA-FOOTER.svg'
+import iconeWhatsapp from '../../assets/images/elements/SVG/WHATSAPP.svg'
+import iconeInstagram from '../../assets/images/elements/SVG/INSTAGRAM.svg'
+import iconeLinkedin from '../../assets/images/elements/SVG/LINKEDIN.svg'
+---
+
+<footer class="rodape-section">
+  <div class="rodape-section__content">
+    <div class="rodape-section__left">
+      <h2 class="rodape-section__title">
+        CONECTIVIDADE<br />É O NOSSO<br />CORE.
+      </h2>
+    </div>
+
+    <div class="rodape-section__center">
+      <nav class="rodape-section__nav">
+        <a href="#home" class="rodape-section__link">Home</a>
+        <a href="#servicos" class="rodape-section__link">Serviços</a>
+        <a href="#sobre" class="rodape-section__link">Sobre</a>
+        <a href="#contato" class="rodape-section__link">Contato</a>
+      </nav>
+    </div>
+
+    <div class="rodape-section__right">
+      <div class="rodape-section__social">
+        <a href="#" class="rodape-section__social-link">
+          <Image
+            src={iconeLinkedin}
+            alt="LinkedIn"
+            class="rodape-section__social-icon"
+          />
+        </a>
+        <a href="#" class="rodape-section__social-link">
+          <Image
+            src={iconeInstagram}
+            alt="Instagram"
+            class="rodape-section__social-icon instagram-icon"
+          />
+        </a>
+        <a href="#" class="rodape-section__social-link">
+          <Image
+            src={iconeWhatsapp}
+            alt="WhatsApp"
+            class="rodape-section__social-icon"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodape-section__bottom">
+    <Image src={logoRodape} alt="Logo CoreFibra" class="rodape-section__logo" />
+  </div>
+</footer>

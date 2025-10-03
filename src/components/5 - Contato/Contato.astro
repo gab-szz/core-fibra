@@ -1,6 +1,7 @@
 ---
 import './Contato.css'
 import { Image } from 'astro:assets'
+import setaAzul from '../../assets/images/elements/SVG/icon-seta-darkblue.svg'
 import genteFibra from '../../assets/images/IMG-GENTE-DE-FIBRA2x.webp'
 import setas from '../../assets/images/elements/WebP/Ativo 12@0.75x.webp'
 ---
@@ -45,7 +46,14 @@ import setas from '../../assets/images/elements/WebP/Ativo 12@0.75x.webp'
         <textarea name="mensagem" placeholder="Mensagem" rows="4" required
         ></textarea>
       </form>
-      <button type="submit">Enviar</button>
+      <button type="submit" class="gente-formulario__botao custom-font">
+        Enviar
+        <Image
+          src={setaAzul}
+          alt="Ícone de seta azul"
+          class="cta-icon-seta__azul"
+        />
+      </button>
     </div>
   </div>
 </section>
