@@ -13,7 +13,7 @@
 .gente-section {
   background-color: var(--color-dark-blue);
   min-height: 100vh;
-  padding: 3rem 5% 5rem 5%;
+  padding: 8rem 5% 5rem 5%;
 }
 
 /* ------------------------- */
@@ -255,7 +255,7 @@
 /* Tablets em modo paisagem (abaixo de 992px) */
 @media (max-width: 992px) {
   .gente-section {
-    padding: 3rem 5%;
+    padding: 5rem 5%;
   }
 
   .gente-title {
@@ -306,7 +306,7 @@
 /* Tablets em modo retrato (abaixo de 768px) */
 @media (max-width: 768px) {
   .gente-section {
-    padding: 2rem 5%;
+    padding: 5rem 5%;
   }
 
   .gente-title {
@@ -362,7 +362,7 @@
 /* Celulares (abaixo de 576px) */
 @media (max-width: 576px) {
   .gente-section {
-    padding: 1.5rem 6%;
+    padding: 3% 6%;
   }
 
   .gente-title {

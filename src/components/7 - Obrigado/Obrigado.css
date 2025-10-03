@@ -1,0 +1,43 @@
+.custom-font {
+  font-family: 'Big Shoulders', sans-serif;
+}
+
+.obrigado-section {
+  background-color: var(--color-white);
+  min-height: 100vh; /* Garante altura mínima, mas permite expandir */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.obrigado-section__title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-green-secondary);
+  margin-bottom: 20px;
+}
+
+.obrigado-section__message {
+  font-size: 2rem;
+  color: var(--color-dark-blue);
+  margin-bottom: 30px;
+}
+
+.obrigado-section__cta-button {
+  background-color: var(--color-green-primary);
+  color: var(--color-dark-blue);
+  border: none;
+  cursor: pointer;
+  border-radius: 9999px;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.obrigado-section__cta-button:hover {
+  background-color: var(--color-green-hover);
+}
