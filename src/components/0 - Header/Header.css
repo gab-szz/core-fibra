@@ -28,6 +28,7 @@
 }
 
 .nav-link {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem; /* ~18px */
   font-weight: 700;
   text-decoration: none;
