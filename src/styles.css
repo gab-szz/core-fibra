@@ -6,6 +6,10 @@
 /* Habilita DaisyUI via diretiva */
 @plugin "daisyui";
 
+a {
+  text-decoration: none;
+}
+
 /* ======================== */
 /* VARIÁVEIS CSS GLOBAIS    */
 /* ======================== */

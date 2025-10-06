@@ -292,6 +292,19 @@
     font-size: 2rem;
     line-height: 1.1;
   }
+  .conectividade-section__features {
+    margin: 1.5rem 0px;
+    gap: 0.5rem;
+  }
+  .feature-item {
+    font-size: 0.8rem;
+    gap: 5px;
+  }
+  .feature-item__arrow {
+    width: 15px;
+    height: 15px;
+  }
+
   .description-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -299,7 +312,7 @@
   }
   .description-card {
     padding: 12px;
-    gap: 8px;
+    gap: 10px;
     min-height: auto;
   }
   .description-card__icon {
@@ -318,9 +331,6 @@
     height: 3px;
     margin-top: 5px;
     margin-bottom: 3px;
-  }
-  .feature-item {
-    font-size: 1rem;
   }
   .conectividade-section__cta-button {
     font-size: 1rem;
