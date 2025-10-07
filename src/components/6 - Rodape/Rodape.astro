@@ -2,7 +2,6 @@
 import './Rodape.css'
 import { Image } from 'astro:assets'
 import logoRodape from '../../assets/images/elements/SVG/LOGO-COREFIBRA-FOOTER.svg'
-import iconeWhatsapp from '../../assets/images/elements/SVG/WHATSAPP.svg'
 import iconeInstagram from '../../assets/images/elements/SVG/INSTAGRAM.svg'
 import iconeLinkedin from '../../assets/images/elements/SVG/LINKEDIN.svg'
 ---
@@ -25,33 +24,21 @@ import iconeLinkedin from '../../assets/images/elements/SVG/LINKEDIN.svg'
     </div>
 
     <div class="rodape-section__right">
-      <div class="rodape-section__social">
-        <a href="#" class="rodape-section__social-link">
-          <Image
-            src={iconeLinkedin}
-            alt="LinkedIn"
-            class="rodape-section__social-icon linkedin-icon"
-          />
-        </a>
-
-        <a
-          class="rodape-section__social-link"
-          href="https://wa.me/556596457936"
-          target="_blank"
-        >
-          <Image
-            src={iconeWhatsapp}
-            alt="WhatsApp"
-            class="rodape-section__social-icon"
-          />
-        </a>
-        <a href="#" class="rodape-section__social-link">
-          <Image
-            src={iconeInstagram}
-            alt="Instagram"
-            class="rodape-section__social-icon instagram-icon"
-          />
-        </a>
+      <div class="rodape-section__contact">
+        <div class="rodape-section__contact-item">
+          <span class="rodape-section__contact-label"
+            >Capitais e regiões metropolitanas</span
+          >
+          <a href="tel:08003600005" class="rodape-section__contact-phone"
+            >0800 360 0005</a
+          >
+        </div>
+        <div class="rodape-section__contact-item">
+          <span class="rodape-section__contact-label">Demais regiões</span>
+          <a href="tel:6536000055" class="rodape-section__contact-phone"
+            >(65) 3600-0055</a
+          >
+        </div>
       </div>
     </div>
   </div>

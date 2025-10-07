@@ -78,12 +78,47 @@
 }
 
 /* ------------------------- */
-/* SEÇÃO DIREITA (SOCIAL)    */
+/* SEÇÃO DIREITA (CONTATO)   */
 /* ------------------------- */
 .rodape-section__right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+}
+
+.rodape-section__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.rodape-section__contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.rodape-section__contact-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-green-primary);
+  opacity: 0.8;
+}
+
+.rodape-section__contact-phone {
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-green-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.rodape-section__contact-phone:hover {
+  color: var(--color-green-hover);
 }
 
 .rodape-section__social {
@@ -166,6 +201,15 @@
     gap: 2rem;
   }
 
+  .rodape-section__contact {
+    align-items: center;
+    text-align: center;
+  }
+
+  .rodape-section__contact-item {
+    align-items: center;
+  }
+
   .rodape-section__social {
     justify-content: center;
   }
@@ -187,6 +231,14 @@
 
   .rodape-section__nav {
     gap: 1.5rem;
+  }
+
+  .rodape-section__contact-label {
+    font-size: 0.8rem;
+  }
+
+  .rodape-section__contact-phone {
+    font-size: 1.2rem;
   }
 
   .rodape-section__social-link {
@@ -230,6 +282,18 @@
 
   .rodape-section__link {
     font-size: 1rem;
+  }
+
+  .rodape-section__contact {
+    gap: 0.8rem;
+  }
+
+  .rodape-section__contact-label {
+    font-size: 0.75rem;
+  }
+
+  .rodape-section__contact-phone {
+    font-size: 1.1rem;
   }
 
   .rodape-section__social {

@@ -1,0 +1,14 @@
+---
+import './WhatsAppFloat.css'
+import { Image } from 'astro:assets'
+import iconeWhatsapp from '../../assets/images/elements/SVG/WHATSAPP.svg'
+---
+
+<a
+  class="whatsapp-float"
+  href="https://wa.me/556596457936"
+  target="_blank"
+  aria-label="Contato via WhatsApp"
+>
+  <Image src={iconeWhatsapp} alt="WhatsApp" class="whatsapp-float__icon" />
+</a>

@@ -1,43 +1,382 @@
+/* Obrigado.css */
+
+/* ------------------------- */
+/* FONTES E ESTILOS GERAIS   */
+/* ------------------------- */
 .custom-font {
   font-family: 'Big Shoulders', sans-serif;
 }
 
+/* ------------------------- */
+/* LAYOUT PRINCIPAL          */
+/* ------------------------- */
 .obrigado-section {
-  background-color: var(--color-white);
-  min-height: 100vh; /* Garante altura mínima, mas permite expandir */
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 2% 5%;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--color-dark-blue) 0%,
+    #1a2332 50%,
+    var(--color-dark-blue) 100%
+  );
+  position: relative;
+  overflow: hidden;
 }
 
-.obrigado-section__title {
+.obrigado-section__background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.obrigado-section__background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(180, 224, 30, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(180, 224, 30, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 60%,
+      rgba(180, 224, 30, 0.03) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.obrigado-section__content {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(180, 224, 30, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 2;
+}
+
+.obrigado-section__content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-green-primary),
+    var(--color-green-secondary),
+    var(--color-green-primary)
+  );
+  border-radius: 20px 20px 0 0;
+}
+
+/* ------------------------- */
+/* HEADER COM LOGO           */
+/* ------------------------- */
+.obrigado-section__header {
+  margin-bottom: 2rem;
+}
+
+.obrigado-section__logo {
+  height: 60px;
+  width: auto;
+  opacity: 0.9;
+}
+
+/* ------------------------- */
+/* ÍCONE DE SUCESSO          */
+/* ------------------------- */
+.obrigado-section__icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.obrigado-section__icon {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 10px 20px rgba(180, 224, 30, 0.3));
+  animation: iconFloat 3s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+.obrigado-section__icon-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(
+    circle,
+    rgba(180, 224, 30, 0.2) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes iconFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* ------------------------- */
+/* TÍTULO PRINCIPAL          */
+/* ------------------------- */
+.obrigado-title {
+  font-family: 'Big Shoulders', sans-serif;
   font-size: 4rem;
   font-weight: 800;
-  color: var(--color-green-secondary);
-  margin-bottom: 20px;
-}
-
-.obrigado-section__message {
-  font-size: 2rem;
+  line-height: 1.1;
   color: var(--color-dark-blue);
-  margin-bottom: 30px;
+  margin: 0 0 2rem 0;
+  background: linear-gradient(135deg, var(--color-dark-blue), #1a2332);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.obrigado-section__cta-button {
-  background-color: var(--color-green-primary);
+/* ------------------------- */
+/* DIVISOR DECORATIVO        */
+/* ------------------------- */
+.obrigado-section__divider {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-green-primary),
+    var(--color-green-secondary)
+  );
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+/* ------------------------- */
+/* MENSAGEM                  */
+/* ------------------------- */
+.obrigado-message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--color-dark-blue);
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.obrigado-message__highlight {
+  font-weight: 600;
+  color: #9abf1f;
+}
+
+/* ------------------------- */
+/* BOTÃO DE RETORNO          */
+/* ------------------------- */
+.obrigado-button {
+  background: linear-gradient(
+    135deg,
+    var(--color-green-primary),
+    var(--color-green-secondary)
+  );
   color: var(--color-dark-blue);
   border: none;
   cursor: pointer;
-  border-radius: 9999px;
-  padding: 0.5rem 2rem;
-  font-size: 1.5rem;
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 1.2rem;
   font-weight: 700;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(180, 224, 30, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
-.obrigado-section__cta-button:hover {
-  background-color: var(--color-green-hover);
+.obrigado-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.obrigado-button:hover::before {
+  left: 100%;
+}
+
+.obrigado-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(180, 224, 30, 0.4);
+  background: linear-gradient(
+    135deg,
+    var(--color-green-hover),
+    var(--color-green-primary)
+  );
+}
+
+.obrigado-button__arrow {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.obrigado-button:hover .obrigado-button__arrow {
+  transform: translateX(5px);
+}
+
+/* ------------------------- */
+/* MEDIA QUERIES (Responsivo)*/
+/* ------------------------- */
+
+/* Tablets e laptops (abaixo de 1200px) */
+@media (max-width: 1200px) {
+  .obrigado-title {
+    font-size: 3.5rem;
+  }
+
+  .obrigado-message {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets em modo retrato (abaixo de 768px) */
+@media (max-width: 768px) {
+  .obrigado-section__background {
+    padding: 1rem;
+  }
+
+  .obrigado-section__content {
+    padding: 3rem 2rem;
+    border-radius: 15px;
+  }
+
+  .obrigado-title {
+    font-size: 3rem;
+  }
+
+  .obrigado-section__icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .obrigado-section__icon-glow {
+    width: 120px;
+    height: 120px;
+  }
+
+  .obrigado-message {
+    font-size: 1.1rem;
+  }
+
+  .obrigado-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* Celulares (abaixo de 576px) */
+@media (max-width: 576px) {
+  .obrigado-section__content {
+    padding: 2.5rem 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .obrigado-section__logo {
+    height: 50px;
+  }
+
+  .obrigado-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .obrigado-section__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .obrigado-section__icon-glow {
+    width: 100px;
+    height: 100px;
+  }
+
+  .obrigado-message {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .obrigado-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .obrigado-section__divider {
+    width: 80px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Celulares muito pequenos (abaixo de 400px) */
+@media (max-width: 400px) {
+  .obrigado-title {
+    font-size: 2rem;
+  }
+
+  .obrigado-section__content {
+    padding: 2rem 1rem;
+  }
 }

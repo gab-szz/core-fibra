@@ -1,12 +1,54 @@
 ---
 import './Obrigado.css'
+import { Image } from 'astro:assets'
+import logoHeader from '../../assets/images/elements/SVG/LOGO-COREFIBRA-CABECALHO.svg'
+import iconeConectividade from '../../assets/images/elements/SVG/Icon-conectividade.svg'
+import setaBranca from '../../assets/images/elements/SVG/SETA-BRANCA-BOTAO.svg'
 ---
 
 <section class="obrigado-section">
-  <h1 class="obrigado-title">Obrigado pelo seu contato!</h1>
-  <p class="obrigado-message">
-    Sua mensagem foi enviada com sucesso. Em breve, um de nossos especialistas
-    entrará em contato com você.
-  </p>
-  <a class="obrigado-button" href="/">Voltar à Página Principal</a>
+  <div class="obrigado-section__background">
+    <div class="obrigado-section__content">
+      <div class="obrigado-section__header">
+        <Image
+          src={logoHeader}
+          alt="Logo CoreFibra"
+          class="obrigado-section__logo"
+        />
+      </div>
+
+      <div class="obrigado-section__main">
+        <div class="obrigado-section__icon-container">
+          <Image
+            src={iconeConectividade}
+            alt="Ícone de sucesso"
+            class="obrigado-section__icon"
+          />
+          <div class="obrigado-section__icon-glow"></div>
+        </div>
+
+        <h1 class="obrigado-title custom-font">
+          OBRIGADO PELO<br />SEU CONTATO!
+        </h1>
+
+        <div class="obrigado-section__divider"></div>
+
+        <p class="obrigado-message">
+          Sua mensagem foi enviada com sucesso.<br />
+          <span class="obrigado-message__highlight">
+            Em breve, um de nossos especialistas entrará em contato com você.
+          </span>
+        </p>
+
+        <a class="obrigado-button custom-font" href="/">
+          VOLTAR À PÁGINA PRINCIPAL
+          <Image
+            src={setaBranca}
+            alt="Ícone de seta"
+            class="obrigado-button__arrow"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
