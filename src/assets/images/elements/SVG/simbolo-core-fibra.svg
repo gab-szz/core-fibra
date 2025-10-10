@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Camada_2"
+   data-name="Camada 2"
+   viewBox="0 0 232.07359 170.22703"
+   version="1.1"
+   sodipodi:docname="simbolo-core-fibra.svg"
+   width="232.07359"
+   height="170.22704"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview547"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="2.8112643"
+     inkscape:cx="303.77791"
+     inkscape:cy="87.682968"
+     inkscape:window-width="1920"
+     inkscape:window-height="1110"
+     inkscape:window-x="0"
+     inkscape:window-y="149"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Camada_2" />
+  <defs
+     id="defs519">
+    <style
+       id="style517">
+      .cls-1 {
+        fill: #b4e01e;
+      }
+    </style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath551">
+      <rect
+         style="fill:#000000"
+         id="rect553"
+         width="232.07359"
+         height="170.5294"
+         x="0.59778553"
+         y="0.38296959" />
+    </clipPath>
+  </defs>
+  <g
+     id="Camada_1-2"
+     data-name="Camada 1"
+     clip-path="url(#clipPath551)"
+     transform="translate(-0.59778553,-0.38296959)">
+    <g
+       id="g543">
+      <g
+         id="g539">
+        <path
+           class="cls-1"
+           d="m 547.22,24.5 h -78.04 c -21.05,0 -38.11,17.06 -38.11,38.11 v 45.37 c 0,21.05 17.06,38.11 38.11,38.11 h 78.04 c 21.05,0 38.11,-17.06 38.11,-38.11 V 62.61 c 0,-21.05 -17.06,-38.11 -38.11,-38.11 z m 7.26,90.75 H 461.92 V 55.36 h 92.56 z"
+           id="path521" />
+        <path
+           class="cls-1"
+           d="m 1296.31,85.08 c 7.93,-6.17 13,-15.64 13,-26.22 0,-18.94 -16.08,-34.36 -37.23,-34.36 h -115.94 v 121.6 h 115.94 c 21.15,0 38.33,-15.42 38.33,-34.37 0,-10.79 -5.51,-20.27 -14.1,-26.66 z m -17.62,30.17 h -90.83 v -14.52 h 90.83 z m 0,-45.37 h -90.83 V 55.36 h 90.83 z"
+           id="path523" />
+        <path
+           class="cls-1"
+           d="m 261.36,62.62 v 45.37 c 0,21.05 17.06,38.11 38.11,38.11 H 415.63 V 115.25 H 292.21 V 55.36 H 415.63 V 24.51 H 299.47 c -21.05,0 -38.11,17.06 -38.11,38.11 z"
+           id="path525" />
+        <path
+           class="cls-1"
+           d="m 770.46,62.62 v 45.37 c 0,21.05 17.06,38.11 38.11,38.11 H 924.73 V 115.25 H 801.31 V 100.73 H 924.73 V 69.88 H 801.31 V 55.51 h 123.42 v -31 H 808.57 c -21.05,0 -38.11,17.06 -38.11,38.11 z"
+           id="path527" />
+        <rect
+           class="cls-1"
+           x="1109.86"
+           y="24.5"
+           width="30.85"
+           height="121.6"
+           id="rect529" />
+        <path
+           class="cls-1"
+           d="m 1609.89,24.5 h -110.43 v 30.85 h 116.82 v 14.09 h -84.22 c -21.37,0 -38.33,17.18 -38.33,38.33 0,21.15 16.96,38.33 38.33,38.33 H 1648 V 62.62 c 0,-21.05 -17.06,-38.11 -38.11,-38.11 z m 6.39,90.75 h -90.83 V 100.3 h 90.83 z"
+           id="path531" />
+        <path
+           class="cls-1"
+           d="m 1442,24.5 h -116.16 v 121.6 h 30.85 v -32.59 h 92.56 v 32.59 h 30.86 v -25.11 c 0,-9.25 -4.41,-17.18 -11.02,-22.47 6.61,-5.29 11.02,-13.22 11.02,-22.47 V 62.62 c 0,-21.05 -17.06,-38.11 -38.11,-38.11 z m 7.26,59.03 H 1356.7 V 54.49 h 92.56 z"
+           id="path533" />
+        <path
+           class="cls-1"
+           d="M 716.92,24.5 H 600.76 v 121.6 h 30.85 v -32.59 h 92.56 v 32.59 h 30.86 v -25.11 c 0,-9.25 -4.41,-17.18 -11.02,-22.47 6.61,-5.29 11.02,-13.22 11.02,-22.47 V 62.62 c 0,-21.05 -17.06,-38.11 -38.11,-38.11 z m 7.26,59.03 H 631.62 V 54.49 h 92.56 z"
+           id="path535" />
+        <path
+           class="cls-1"
+           d="m 940.16,62.62 v 83.49 h 31.72 v -44.94 h 122.55 V 70.32 H 971.88 V 55.37 h 122.55 V 24.52 H 978.27 c -21.05,0 -38.11,17.06 -38.11,38.11 z"
+           id="path537" />
+      </g>
+      <path
+         class="cls-1"
+         d="M 95.07,31.49 63.58,0 41.76,21.82 75.37,55.43 V 69.88 H 0 v 30.85 h 75.38 v 14.45 l -33.61,33.61 21.82,21.82 31.49,-31.49 c 7.15,-7.15 11.16,-16.84 11.16,-26.95 V 58.44 c 0,-10.11 -4.02,-19.8 -11.16,-26.95 z m 137.25,69.24 V 69.88 H 156.94 V 55.43 L 190.55,21.82 168.74,0 137.25,31.49 c -7.15,7.15 -11.16,16.84 -11.16,26.95 v 53.73 c 0,10.11 4.02,19.8 11.16,26.95 l 31.49,31.49 21.82,-21.82 -33.61,-33.61 v -14.45 h 75.38 z"
+         id="path541" />
+    </g>
+  </g>
+</svg>
