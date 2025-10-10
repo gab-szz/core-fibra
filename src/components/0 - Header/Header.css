@@ -17,29 +17,75 @@
 .logo-image {
   height: 2.5rem;
   width: auto;
-  display: block; /* Remove espaço extra abaixo da imagem */
+  display: block;
 }
 
 /* Navegação e Links */
 .nav {
   display: flex;
   align-items: center;
-  gap: 2rem; /* Espaço entre os links */
+  gap: 2rem;
 }
 
 .nav-link {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem; /* ~18px */
+  font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
-  color: inherit; /* Herda a cor do .header */
-  padding: 0.5rem;
-  transition: all 0.3s ease; /* Transição suave */
+  color: inherit;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Efeito de background que cresce no hover */
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-dark-blue) 0%, #1a2b46 100%);
+  transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
+  border-radius: 8px;
+}
+
+/* Linha animada embaixo */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-dark-blue);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateX(-50%);
 }
 
 .nav-link:hover {
   cursor: pointer;
-  text-decoration: underline;
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link:hover::before {
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Efeito de pulse sutil no hover */
+.nav-link:active {
+  transform: translateY(0) scale(0.98);
+  transition: transform 0.1s ease;
 }
 
 /* Botão de Ação (CTA) */
@@ -113,6 +159,17 @@
 
   .nav-link {
     font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Reduz a intensidade dos efeitos em mobile */
+  .nav-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-link::after {
+    height: 1.5px;
   }
 
   .cta-button {
@@ -144,5 +201,21 @@
 
   .nav-link {
     font-size: 0.85rem; /* ~12px */
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* Simplifica os efeitos em telas muito pequenas */
+  .nav-link::before {
+    display: none;
+  }
+
+  .nav-link:hover {
+    transform: none;
+    box-shadow: none;
+    color: var(--color-dark-blue);
+  }
+
+  .nav-link::after {
+    height: 1px;
   }
 }
